@@ -1,0 +1,16 @@
+{
+  "name": "abrasive-ducks-transducers",
+  "version": "1.0.0",
+  "description": "Transducers for abrasive-ducks",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "npm install coffeescript && rm -f package-lock.json && coffee -c *.md",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/shimaore/abrasive-ducks-transducers"
+  },
+  "author": "",
+  "license": "Unlicense"
+}
