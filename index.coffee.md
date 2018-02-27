@@ -1,8 +1,9 @@
-    operation = (name) -> ({op}) -> op is name
-    Value = ({value}) -> value
-    Key = ({key}) -> key
+    operation = (name) -> (msg) -> name is msg.get 'op'
+    Value = (msg) -> msg.get 'value'
+    Key = (msg) -> msg.get 'key'
+    Doc = (msg) -> msg.get 'doc'
+    Operations = (msg) -> msg.get 'operations'
     is_string = (v) -> typeof v is 'string'
-    is_object = (v) -> typeof v is 'object'
     not_null = (v) -> v?
 
-    module.exports = {operation,Value,Key,is_string,is_object,not_null}
+    module.exports = {operation,Value,Key,Doc,Operations,is_string,not_null}
