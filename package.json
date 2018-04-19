@@ -14,7 +14,7 @@
   },
   "author": "",
   "license": "Unlicense",
-  "dependencies": {
-    "coffeescript": "^2.2.2"
+  "devDpendencies": {
+    "coffeescript": "^2.2.4"
   }
 }
