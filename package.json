@@ -4,7 +4,7 @@
   "description": "Transducers for abrasive-ducks",
   "main": "index.js",
   "scripts": {
-    "build": "npm install coffeescript && rm -f package-lock.json && coffee -c *.md",
+    "build": "npm install --only=dev && rm -f package-lock.json && coffee -c *.md",
     "prepublishOnly": "npm run build",
     "test": "mocha"
   },
@@ -14,7 +14,7 @@
   },
   "author": "",
   "license": "Unlicense",
-  "devDpendencies": {
+  "devDependencies": {
     "coffeescript": "^2.2.4"
   }
 }
